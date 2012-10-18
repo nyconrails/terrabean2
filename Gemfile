@@ -10,6 +10,7 @@ gem 'inherited_resources'
 gem 'paperclip'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'twitter-bootstrap-rails'
+gem 'stripe'
 
 
 # Gems used only for assets and not required

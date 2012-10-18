@@ -1,41 +1,55 @@
 .public
   .welcome
     .right
-      %h2 Receive coffee at your door every month!
-      %p.price from just $20.95 including shipping
-      .gift
+      %h1 Receive coffee at your door every month!
+      %h4 from just $20.95 including shipping
+      .btn
         %ul
-          %li= link_to "Gift Now", ''
-      .subscribe
-        %ul
-          %li= link_to "Subscribe Now", ''
-    .left
-    .bottom
-      %p We support local agriculture globally by working only with artisan coffee roasters who have direct relationships with the farmers. We'll bring you the story behind the coffee you are drinking for you to get to know the farmers, too.
-  
-  .coffee-of-the-month
-    %h3 October's Coffee
-  
-  .blog-activity
-    %h2 RECENT BLOG POSTS
-    .post
-      .title We're Live!
-      .meta_data Posted by User on Date
-      .title We're Live!
-      .meta_data Posted by User on Date    
-      .title We're Live!
-      .meta_data Posted by User on Date
-    %ul
-      %li= link_to "[Read More]", ''
+          %li.subscribe= link_to "Subscribe Now", ''
+          %li.gift= link_to "Gift Now", ''
           
-    .daily-brewing-tip
-      %h2 Today's Brewing Tip
-  
-  .about1
-    %h2 ABOUT OUR COFFEE
-    %p We provide unique specialty coffees. The roasters travel to the best coffee growing regions in the world to select their beans. They share our vision and we're proud to showcase their coffee. We strive to provide you a variety of different beans from different raosters to broaden your experience and excite your taste buds.
-  
-  .about2
-    %h2 ABOUT OUR COFFEE
-    %p We provide unique specialty coffees. The roasters travel to the best coffee growing regions in the world to select their beans. They share our vision and we're proud to showcase their coffee. We strive to provide you a variety of different beans from different raosters to broaden your experience and excite your taste buds.
+    .bottom
+      %p We support local agricultre globally by working only with artisan coffee roasters who have direct relationships with the farmers. We'll bring you the story behind the coffee you are drinking for you to get to know the farmers, too.
+      
+    .left
     
+  .coffee
+    .left
+      %h2 October's Coffee
+      .archer_farms
+        .picture
+        .content
+          %h6 Archer Farms
+          %p We support local argriculter globally by working with artisan coffee roasters who have direct relationships with the farmers...
+          %p= link_to "[Read More]", ''
+        
+    .right
+      .recent_blog_posts
+        %h4 RECENT BLOG POSTS
+        .title
+          %p= link_to "We're Live!", ''
+        .posted_by
+          %p Posted by Anastaria on January 1, 2012
+        .title
+          %p= link_to "We're Live!", ''
+        .posted_by
+          %p Posted by Anastaria on January 1, 2012
+        .title
+          %p= link_to "We're Live!", ''
+        .posted_by.last
+          %p Posted by Anastaria on January 1, 2012
+        %p= link_to '[Read More]', '', :class => "read_more"
+
+      .todays_brewing_tip
+        %h3 Today's Brewing Tip
+        
+      
+  .about
+    .right
+      %h3 ABOUT OUR COFFEE
+      %p We provide unique specialty coffees. The roasters travel to the best coffee growing regions in the world to select their beans. They share our vision and we're proud to showcase their coffee. We strive to provide you a variety of different beans from different roasters to broaden your experience and excite your taste buds.
+
+  .about
+    .left
+      %h3 ABOUT OUR COFFEE
+      %p We provide unique specialty coffees. The roasters travel to the best coffee growing regions in the world to select their beans. They share our vision and we're proud to showcase their coffee. We strive to provide you a variety of different beans from different roasters to broaden your experience and excite your taste buds.

@@ -1,207 +1,219 @@
 .public
-
   .welcome
-    background: #f9be44
-    background: -moz-radial-gradient(center, ellipse cover, #f9be44 0%, #e79c3c 100%)
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f9be44), color-stop(100%,#e79c3c))
-    background: -webkit-radial-gradient(center, ellipse cover, #f9be44 0%,#e79c3c 100%)
-    background: -o-radial-gradient(center, ellipse cover, #f9be44 0%,#e79c3c 100%)
-    background: -ms-radial-gradient(center, ellipse cover, #f9be44 0%,#e79c3c 100%)
-    background: radial-gradient(ellipse at center, #f9be44 0%,#e79c3c 100%)
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9be44', endColorstr='#e79c3c',GradientType=1 )
-    padding: 20px
-    min-height: 295px
+    background: #ffbd67
+    background: -moz-linear-gradient(top,  #ffbd67 25%, #fd9815 100%)
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,#ffbd67), color-stop(100%,#fd9815))
+    background: -webkit-linear-gradient(top,  #ffbd67 25%,#fd9815 100%)
+    background: -o-linear-gradient(top,  #ffbd67 25%,#fd9815 100%)
+    background: -ms-linear-gradient(top,  #ffbd67 25%,#fd9815 100%)
+    background: linear-gradient(to bottom,  #ffbd67 25%,#fd9815 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbd67', endColorstr='#fd9815',GradientType=0 )
+    width: 960px
+    height: 300px
+    font-family: helvetica
+    margin-bottom: 20px
+    
+    .bottom
+      height: 80px
+      width: 960px
+      float: right
+      p
+        text-align: left
+        margin-top: 40px
+        margin-left: 30px
+        margin-right: 20px
+        font-size: 13pt
+        font-weight: 300
+        color: #fff
+
+    .right
+      float: right
+      height: 200px
+      width: 550px
+      text-align: center
+      h1
+        color: #fff
+        font-size: 32pt
+        margin-top: 20px
+        font-family: helvetica
+      h4
+        color: #A43C21
+        font-size: 17pt
+        font-weight: 400
+        font-family: helvetica
+        margin-top: -14px
+      
+      .btn
+        ul
+          li
+            list-style-type: none
+            a
+              text-decoration: none
+              color: #fff
+              background: #da1600
+              background: -moz-linear-gradient(top,  #da1600 0%, #a30303 99%)
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#da1600), color-stop(99%,#a30303))
+              background: -webkit-linear-gradient(top,  #da1600 0%,#a30303 99%)
+              background: -o-linear-gradient(top,  #da1600 0%,#a30303 99%)
+              background: -ms-linear-gradient(top,  #da1600 0%,#a30303 99%)
+              background: linear-gradient(to bottom,  #da1600 0%,#a30303 99%)
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#da1600', endColorstr='#a30303',GradientType=0 )
+              width: 40px
+              border-radius: 5px
+              margin-top: 20px
+              padding: 10px 25px
+              font-size: 12pt
+              
+              &:hover
+                background: #a30303
+                background: -moz-linear-gradient(top,  #a30303 1%, #da1600 100%)
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#a30303), color-stop(100%,#da1600))
+                background: -webkit-linear-gradient(top,  #a30303 1%,#da1600 100%)
+                background: -o-linear-gradient(top,  #a30303 1%,#da1600 100%)
+                background: -ms-linear-gradient(top,  #a30303 1%,#da1600 100%)
+                background: linear-gradient(to bottom,  #a30303 1%,#da1600 100%)
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a30303', endColorstr='#da1600',GradientType=0 )
+              
+          .gift
+            margin-left: 130px
+            margin-top: -19px
+            a
+              padding-right: 45px
+              padding-left: 45px
+
+          .subscribe
+            margin-right: 200px
+
+    
+    .left
+      width: 270px
+      height: 170px
+      background: #fff
+
+  .coffee
+    .left
+      height: 350px
+      width: 480px
+      float: left
+      background: #fff
+      margin-bottom: 20px
+      
+    h2
+      font-size: 28pt
+      font-family: helvetica
+      text-align: center
+      
+    .archer_farms
+      height: 70px
+      width: 440px
+      background: #EBEBE0
+      margin-left: 20px
+      margin-top: 180px
+      font-family: helvetica
+      .picture
+      .content
+        width: 370px
+        float: right
+        margin-right: 5px
+        margin-top: 5px
+        h6
+          color: #335CD6
+          margin: 0
+          font-size: 12pt
+        p
+          font-size: 8pt
+          margin: 0
+          font-weight: 400
+          a
+            color: #8099E6
+      
+    .right
+      height: 300px
+      width: 480px
+      float: right
+      font-family: helvetica
+      
+      .recent_blog_posts
+        margin-left: 30px
+        h4
+          color: #A32921
+          font-weight: 300
+          font-size: 16pt
+          margin: 0
+          margin-top: 5px
+          margin-bottom: 10px
+        p
+          a.read_more
+            color: #A32921
+            float: right
+        
+        
+        .title
+          p
+            color: black
+            font-family: helvetica
+            font-weight: 600
+            margin-bottom: -15px
+            a
+              text-decoration: none
+              color: black
+              
+        .posted_by
+          margin: 0
+          font-family: helvetica
+          color: #8A8A5C
+          font-size: 10pt
+          border-bottom-style: solid
+          border-bottom-width: thin
+          margin-bottom: -10px
+          margin-top: 10px
+          
+        .posted_by.last
+          border-bottom-style: none
+          
+          
+      .todays_brewing_tip
+        min-height: 129px
+        background: #A5BD7D
+        margin-left: 30px
+        margin-top: 45px
+
+        h3 
+          margin-left: 20px
+          margin-top: 15px 
+          padding-top: 10px
+          color: #fff
+          font-size: 20pt
+          font-family: helvetica
+      
+  .about
+    background: #F3FBC0
+    border-radius: 5px
+    width: 960px
+    height: 155px
+    font-family: helvetica
+    margin-bottom: 20px
+    clear: both
+    h3
+      color: #7C545D
+      font-weight: 500
+      font-size: 18pt
+      margin-top: 10px
+    p
+      font-size: 11pt
+      color: #7A7A52
+      line-height: 20px
+      margin-top: -15px
     
     .right
       float: right
-      width: 550px
-      height: 240px
-      clear: both
-      padding: 0
-      margin: 0
-      display: inline
-      
-      p.price
-        color: #A43C21
-        font-family: helvetica
-        text-align: center
-        font-size: 170%
-        padding: 0
-          
-      h2
-        font-size: 270%
-        text-align: center
-        color: #fff
-        font-family: helvetica
-        float: right
-        padding-bottom: 20px
-        margin: 0
-      
-      .subscribe, .gift
-        display: inline
-        padding: 5px 15px
-        float: right
-        width: 150px
-        margin-right: 100px
-        margin-top: -10px
-        background: #dd5a43
-        background: -moz-linear-gradient(top,  #dd5a43 15%, #bc321a 50%, #aa4400 75%, #9c1c02 89%)
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(15%,#dd5a43), color-stop(50%,#bc321a), color-stop(75%,#aa4400), color-stop(89%,#9c1c02))
-        background: -webkit-linear-gradient(top,  #dd5a43 15%,#bc321a 50%,#aa4400 75%,#9c1c02 89%)
-        background: -o-linear-gradient(top,  #dd5a43 15%,#bc321a 50%,#aa4400 75%,#9c1c02 89%)
-        background: -ms-linear-gradient(top,  #dd5a43 15%,#bc321a 50%,#aa4400 75%,#9c1c02 89%)
-        background: linear-gradient(to bottom,  #dd5a43 15%,#bc321a 50%,#aa4400 75%,#9c1c02 89%)
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd5a43', endColorstr='#9c1c02',GradientType=0 )
-        border-radius: 8px
-        ul
-          list-style-type: none
-          margin: 0
-          padding: 0
-          li
-            a
-              clear: both
-              color: white
-              font-family: helvetica
-              display: block
-              text-align: center
-              padding: 7px
-              font-size: 120%
-              text-decoration: none
-        
-        &:hover
-          background: #9c1c02
-          background: -moz-linear-gradient(top,  #9c1c02 12%, #dd5a43 88%)
-          background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,#9c1c02), color-stop(88%,#dd5a43))
-          background: -webkit-linear-gradient(top,  #9c1c02 12%,#dd5a43 88%)
-          background: -o-linear-gradient(top,  #9c1c02 12%,#dd5a43 88%)
-          background: -ms-linear-gradient(top,  #9c1c02 12%,#dd5a43 88%)
-          background: linear-gradient(to bottom,  #9c1c02 12%,#dd5a43 88%)
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c1c02', endColorstr='#dd5a43',GradientType=0 )
-        
-      .subscribe
-        margin-right: 15px
-       
-      .gift
-        margin-left: 0
+      width: 600px
+      p, h3
+        margin-right: 20px
 
     .left
-      height: 240px
-      width: 350px
       float: left
-      background: #fff
-      display: inline
-      
-    .bottom
-      width: 960px
-      height: 60px
-      float: right
-  
-      p
-        clear: both
-        color: #fff
-        font-family: helvetica
-        display: block
-        text-align: center
-        margin-left: 35px
-        font-size: 105%
-      
-  .coffee-of-the-month
-    background: #fff
-    height: 400px
-    width: 480px
-    float: left
-    display: inline
-    margin-top: 30px
-    margin-bottom: 30px
-    h3
-      font-family: chalkduster
-      font-size: 220%
-      text-align: center
-        
-  .blog-activity
-    height: 400px
-    width: 480px
-    display: inline
-    float: right
-    margin-top: 20px
-    margin-bottom: 10px
-    
-    h2
-      font-family: avenir
-      margin-left: 30px
-      color: #A32921
-      
-    .title
-      margin-left: 30px
-      font-weight: bold
-      font-family: helvetica
-       
-    .meta_data
-      font-family: helvetica
-      margin-bottom: 10px
-      margin-left: 30px
-      border-bottom-style: solid
-      border-bottom-width: thin
-      color: gray
-      
-    ul
-      list-style-type: none
-      float: right
-      li
-        a
-          color: #A32921
-          font-family: helvetica
-  
-    .daily-brewing-tip
-      height: auto
-      width: 450px
-      padding-bottom: 60px
-      background: #A5BD7D
-      margin-left: 30px
-      margin-bottom: 30px
-      margin-top: 65px
-      overflow: auto
-      h2
-        margin-left: 20px
-        font-famiy: helvetica
-        color: white
-  
-  .about1
-    background: #F3FBC0
-    clear: both
-    display: block
-    width: 960px
-    height: 140px
-    border-radius: 10px
-    h2, p
-      color: #7C545D
-      float: right
-      font-family: helvetica
-      margin: 0 20px
-      display: inline
       width: 600px
-    p
-      font-size: .9em
-    h2
-      margin-top: 10px
-      margin-bottom: 10px
-    
-  .about2
-    background: #F3FBC0
-    margin-top: 10px
-    width: 960px
-    height: 140px
-    display: block
-    border-radius: 10px
-    h2, p
-      color: #7C545D
-      float: left
-      font-family: helvetica
-      margin: 0 20px
-      width: 600px
-    p 
-      font-size: .9em
-    h2
-      margin-top: 10px
-      margin-bottom: 10px
-      
+      padding-bottom: 20px
+      h3, p
+        margin-left: 30px
