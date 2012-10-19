@@ -3,14 +3,16 @@
   font-family: helvetica
  
   .month_to_month, .six_month
-    height: 310px
-    width: 312px
+    height: 348px
+    width: 300px
     float: left
     background: #fff
     text-align: center
     font-weight: 300
     color: #5C5C33
-    box-shadow: 3px 3px 3px #888
+    box-shadow: 0px 1px 2px #888
+    position: relative
+    border-radius: 5px
   
     h3, p
       margin-right: 20px
@@ -20,73 +22,132 @@
       border-bottom-style: solid
       border-bottom-width: thin
       border-bottom-color: #D6D6C2
-      font-size: 16pt
-      font-weight: 400
+      font-size: 20pt
+      font-weight: 300
       line-height: 30px
       color: #757547
+      padding-bottom: 5px
     
-    p
-      font-size: 16pt
-      font-weight: 600
-     
-    .btn
+    .cost
+      position: absolute
+      bottom: 17px
+      left: 31px
       p
-        a
-          text-decoration: none
-          font-weight: 500
-          color: #fff
-          padding: 10px 35px
-          border-radius: 5px
-          box-shadow: 3px 3px 3px #888
-          background: #ffbd67
-          background: -moz-linear-gradient(top,  #ffbd67 25%, #fd9815 100%)
-          background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,#ffbd67), color-stop(100%,#fd9815))
-          background: -webkit-linear-gradient(top,  #ffbd67 25%,#fd9815 100%)
-          background: -o-linear-gradient(top,  #ffbd67 25%,#fd9815 100%)
-          background: -ms-linear-gradient(top,  #ffbd67 25%,#fd9815 100%)
-          background: linear-gradient(to bottom,  #ffbd67 25%,#fd9815 100%)
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffbd67', endColorstr='#fd9815',GradientType=0 )
-      
-  .three_month
-    height: 394px
-    width: 312px
-    background: #F5F5F0
-    box-shadow: 3px 3px 3px #888
-    float: left
-    margin-top: -60px
-    margin-bottom: 50px
-    text-align: center
-  
-    .most_popular
-      h4.most_popular
+        font-size: 18pt
+        font-weight: 400
+        color: #757547
+     
       .btn
         p
           a
             text-decoration: none
-            color: #FFFFA3
+            font-weight: 500
+            color: #fff
             padding: 10px 35px
             border-radius: 5px
-            background: -moz-linear-gradient(top,  rgba(34,92,184,0.95) 0%, rgba(34,92,184,0.95) 45%, rgba(34,92,184,1) 98%, rgba(34,92,184,1) 100%)
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(34,92,184,0.95)), color-stop(45%,rgba(34,92,184,0.95)), color-stop(98%,rgba(34,92,184,1)), color-stop(100%,rgba(34,92,184,1)))
-            background: -webkit-linear-gradient(top,  rgba(34,92,184,0.95) 0%,rgba(34,92,184,0.95) 45%,rgba(34,92,184,1) 98%,rgba(34,92,184,1) 100%)
-            background: -o-linear-gradient(top,  rgba(34,92,184,0.95) 0%,rgba(34,92,184,0.95) 45%,rgba(34,92,184,1) 98%,rgba(34,92,184,1) 100%)
-            background: -ms-linear-gradient(top,  rgba(34,92,184,0.95) 0%,rgba(34,92,184,0.95) 45%,rgba(34,92,184,1) 98%,rgba(34,92,184,1) 100%)
-            background: linear-gradient(to bottom,  rgba(34,92,184,0.95) 0%,rgba(34,92,184,0.95) 45%,rgba(34,92,184,1) 98%,rgba(34,92,184,1) 100%)
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2225cb8', endColorstr='#225cb8',GradientType=0 )
-            
+            box-shadow: 3px 3px 3px #888
+            background: rgb(255,183,107)
+            background: -moz-linear-gradient(top,  rgba(255,183,107,1) 0%, rgba(255,167,61,1) 20%, rgba(255,124,0,1) 70%, rgba(255,127,4,1) 100%)
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,183,107,1)), color-stop(20%,rgba(255,167,61,1)), color-stop(70%,rgba(255,124,0,1)), color-stop(100%,rgba(255,127,4,1)))
+            background: -webkit-linear-gradient(top,  rgba(255,183,107,1) 0%,rgba(255,167,61,1) 20%,rgba(255,124,0,1) 70%,rgba(255,127,4,1) 100%)
+            background: -o-linear-gradient(top,  rgba(255,183,107,1) 0%,rgba(255,167,61,1) 20%,rgba(255,124,0,1) 70%,rgba(255,127,4,1) 100%)
+            background: -ms-linear-gradient(top,  rgba(255,183,107,1) 0%,rgba(255,167,61,1) 20%,rgba(255,124,0,1) 70%,rgba(255,127,4,1) 100%)
+            background: linear-gradient(to bottom,  rgba(255,183,107,1) 0%,rgba(255,167,61,1) 20%,rgba(255,124,0,1) 70%,rgba(255,127,4,1) 100%)
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffb76b', endColorstr='#ff7f04',GradientType=0 )
+          
+          
+      
+  .three_month
+    height: 440px
+    width: 312px
+    background: #F5F5F0
+    box-shadow: 0px 0px 7px 4px #B8B8B8
+    float: left
+    margin-top: -66px
+    margin-bottom: 50px
+    text-align: center
+    position: relative
+    z-index: 5
+    border-radius: 5px
+  
+    .most_popular      
+      h4.most_popular
+        width: 360
+        background: -moz-linear-gradient(top,  rgba(34,92,184,0.95) 0%, rgba(34,92,184,0.95) 45%, rgba(34,92,184,1) 98%, rgba(34,92,184,1) 100%)
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(34,92,184,0.95)), color-stop(45%,rgba(34,92,184,0.95)), color-stop(98%,rgba(34,92,184,1)), color-stop(100%,rgba(34,92,184,1)))
+        background: -webkit-linear-gradient(top,  rgba(34,92,184,0.95) 0%,rgba(34,92,184,0.95) 45%,rgba(34,92,184,1) 98%,rgba(34,92,184,1) 100%)
+        background: -o-linear-gradient(top,  rgba(34,92,184,0.95) 0%,rgba(34,92,184,0.95) 45%,rgba(34,92,184,1) 98%,rgba(34,92,184,1) 100%)
+        background: -ms-linear-gradient(top,  rgba(34,92,184,0.95) 0%,rgba(34,92,184,0.95) 45%,rgba(34,92,184,1) 98%,rgba(34,92,184,1) 100%)
+        background: linear-gradient(to bottom,  rgba(34,92,184,0.95) 0%,rgba(34,92,184,0.95) 45%,rgba(34,92,184,1) 98%,rgba(34,92,184,1) 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2225cb8', endColorstr='#225cb8',GradientType=0 )       
+        color: #FFE066   
+        font-size: 18pt
+        font-weight: 400
+        padding: 10px 35px
+        margin-top: 8px
+        box-shadow: 3px 3px 3px #888
+        width: 260px
+        margin-left: -8px
+      
+      .cost
+        position: absolute
+        bottom: 42px
+        left: 39px
+        
+        p
+          font-size: 18pt
+          color: #757547
+        .btn
+          p
+            font-size: 18pt
+            color: #757547
+            a
+              box-shadow: 3px 3px 3px #888
+              font-size: 18pt
+              font-weight: 400
+              text-decoration: none
+              color: #FFE066
+              padding: 11px 49px
+              border-radius: 5px
+              background: -moz-linear-gradient(top,  rgba(34,92,184,0.95) 0%, rgba(34,92,184,0.95) 45%, rgba(34,92,184,1) 98%, rgba(34,92,184,1) 100%)
+              background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(34,92,184,0.95)), color-stop(45%,rgba(34,92,184,0.95)), color-stop(98%,rgba(34,92,184,1)), color-stop(100%,rgba(34,92,184,1)))
+              background: -webkit-linear-gradient(top,  rgba(34,92,184,0.95) 0%,rgba(34,92,184,0.95) 45%,rgba(34,92,184,1) 98%,rgba(34,92,184,1) 100%)
+              background: -o-linear-gradient(top,  rgba(34,92,184,0.95) 0%,rgba(34,92,184,0.95) 45%,rgba(34,92,184,1) 98%,rgba(34,92,184,1) 100%)
+              background: -ms-linear-gradient(top,  rgba(34,92,184,0.95) 0%,rgba(34,92,184,0.95) 45%,rgba(34,92,184,1) 98%,rgba(34,92,184,1) 100%)
+              background: linear-gradient(to bottom,  rgba(34,92,184,0.95) 0%,rgba(34,92,184,0.95) 45%,rgba(34,92,184,1) 98%,rgba(34,92,184,1) 100%)
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2225cb8', endColorstr='#225cb8',GradientType=0 )
+ 
+             
       
       h3
+        border-bottom-style: solid
+        border-bottom-width: thin
+        border-bottom-color: #D6D6C2
+        font-size: 20pt
+        font-weight: 300
+        line-height: 30px
+        color: #757547
+        padding-bottom: 5px
+        margin-bottom: 5px
+        margin-left: 20px
+        
+      h3, ul
+        margin-right: 20px
+      
       ul
         list-style-type: none
+        margin-left: -24px
+        margin-top: 5px
+        font-size: 14pt
         li
           line-height: 40px
+          text-align: center
           border-bottom-style: solid
           border-bottom-width: thin
           border-bottom-color: #D6D6C2
           color: #5C5C33
         li.last
           
-      p 
       
   .six_month
     h3 
@@ -109,5 +170,8 @@
       color: #5C5C33
       margin-left: 30px
       padding-top: 40px
-  
-    
+
+
+.subscriptions.new
+  h1
+    font-family: helvetica

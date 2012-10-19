@@ -1,6 +1,5 @@
 class SubscriptionsController < ApplicationController
   
-  def index
-  end
-
+  inherit_resources
+  
 end

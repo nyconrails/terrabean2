@@ -1,0 +1,6 @@
+.form-horizontal
+  = simple_form_for @subscription do |f|
+    = f.input :email
+    = f.input :first_name
+    = f.input :last_name
+    = f.submit 'Sign up'
