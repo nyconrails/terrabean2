@@ -4,7 +4,7 @@
     .cost
       %p $24.95/month
       .btn
-        %p= link_to "Sign up now!", new_subscription_path
+        %p= link_to "Sign up now!", new_subscription_path(:plan_id => 1)
       
       
   .three_month
@@ -18,7 +18,7 @@
       .cost    
         %p $22.35/month
         .btn.most_popular
-          %p= link_to "Sign up now!", new_subscription_path
+          %p= link_to "Sign up now!", new_subscription_path(:plan_id => 2)
   
   .six_month
     %h3 6 Month Subscription
@@ -26,7 +26,7 @@
     .cost      
       %p $20.15/month
       .btn
-        %p= link_to "Sign up now!", new_subscription_path
+        %p= link_to "Sign up now!", new_subscription_path(:plan_id => 3)
     
   .plans_include
     %p All Plans Include:

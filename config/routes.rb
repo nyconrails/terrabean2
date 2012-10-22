@@ -5,5 +5,4 @@ Terrabean::Application.routes.draw do
   #CRUD Resources
   resources :subscriptions
   
-  
 end
