@@ -15,4 +15,4 @@
 /tmp
 
 # Ignore the config/initializers/stripe.rb file
-/config/initializers/stripe.rb
+#/config/initializers/stripe.rb
