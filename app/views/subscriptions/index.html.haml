@@ -2,7 +2,7 @@
   .month_to_month
     %h3 Month-to-Month
     .cost
-      %p $24.95/month
+      %p $20.95/month
       .btn
         %p= link_to "Sign up now!", new_subscription_path(:plan_id => 1)
       
@@ -12,11 +12,8 @@
       %h4.most_popular Most Popular Plan     
       %h3 3 Month Subscription
       %ul
-        %li Important Feature
-        %li Important Feature
-        %li.last Important Feature
       .cost    
-        %p $22.35/month
+        %p $19.95/month ($59.85)
         .btn.most_popular
           %p= link_to "Sign up now!", new_subscription_path(:plan_id => 2)
   
@@ -24,9 +21,15 @@
     %h3 6 Month Subscription
     
     .cost      
-      %p $20.15/month
+      %p $18.95/month (113.70)
       .btn
         %p= link_to "Sign up now!", new_subscription_path(:plan_id => 3)
     
   .plans_include
-    %p All Plans Include:
+    %h1 All Plans Include:
+    %ul
+      %li 12 oz of different AMAZING coffee (whole bean or ground)
+      %li Story of the farmer and the bean
+      %li Brewing tips to improve your coffee drinking experience
+      %li Shipping and Handling Included
+    %p *To receive coffee this month, order before the 12th. The coffee will be shipped on the 22nd of each month.
