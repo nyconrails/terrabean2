@@ -11,4 +11,8 @@ class SubscriptionsController < ApplicationController
     end
   end
   
+  def subscription_confirmation
+    
+  end
+  
 end
