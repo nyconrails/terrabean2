@@ -1,7 +1,6 @@
 class Subscription < ActiveRecord::Base
-  attr_accessible :email, :first_name, :last_name, :string, :stripe_card_token, :plan_id, :address, :city, :state, :zip, :phone_number
-
-
+  attr_accessible :email, :first_name, :last_name, :string, :stripe_card_token, :plan_id, :address, :city, :state, :zip, :phone_number, :coffee_type, :is_gift
+  validates_presence_of :email, :coffee_type, :first_name, :last_name, :address, :city, :state, :zip, :phone_number
   
   
   attr_accessor :stripe_card_token, :plan_id

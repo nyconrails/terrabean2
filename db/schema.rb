@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121023021046) do
+ActiveRecord::Schema.define(:version => 20121025154432) do
 
   create_table "plans", :force => true do |t|
     t.datetime "created_at", :null => false
@@ -31,6 +31,8 @@ ActiveRecord::Schema.define(:version => 20121023021046) do
     t.string   "state"
     t.string   "zip"
     t.string   "phone_number"
+    t.string   "coffee_type"
+    t.boolean  "is_gift"
   end
 
 end
