@@ -57,7 +57,17 @@
         = select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"}
         = select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, id: "card_year"}
     
+    .is_gift
+      = label_tag :is_gift, "This is a gift"
+      = check_box_tag :is_gift, :class => 'is_gift'
+    .gift
+      = f.label :your_email
+      = f.text_field :payer_email, :class => 'text'
+    
     .actions
+      <span id="siteseal"><script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=FRHG9T8ULhfVi1wZqF8GNl8AX9ULpHI7ChVznt7kcSYUgSJPoOzEU8atYpAM"></script></span>
+      
+      %br
       = f.submit "Subscribe"
   
   .bottom
