@@ -1,6 +1,7 @@
 Terrabean::Application.routes.draw do
   
   root :to => 'public#index'
+  match '/tos' => 'public#tos', :as => 'tos'
   
   #CRUD Resources
   resources :subscriptions

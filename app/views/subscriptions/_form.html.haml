@@ -43,6 +43,7 @@
     %h2 Coffee Type
     = f.input :coffee_type, :collection => ['Whole Beans','Ground'], :label => false
     %h2 Payment Information
+    .cc{:style => 'margin-bottom:15px'}= image_tag '/assets/credit_card_logos.jpeg'
     - if @subscription.stripe_card_token.present?
       %p Credit card has been provided.
     - else
