@@ -1,0 +1,21 @@
+%h1 Subscriptions
+%table{:class => "table table-striped"}
+  %thead
+    %tr
+      %th ID
+      %th Date
+      %th First Name
+      %th Last Name
+      %th Email
+      %th Is Gift?
+      %th
+  %tbody
+    - @subscriptions.each do |subscription|
+      %tr
+        %td= subscription.id
+        %td= subscription.created_at.strftime("%x")
+        %td= subscription.first_name
+        %td= subscription.last_name
+        %td= subscription.email
+        %td= subscription.is_gift
+        %td= link_to 'Details', '', :class => 'btn btn-primary'

@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %title #{yield :title} Terra Bean Coffee - Admin
+    = stylesheet_link_tag 'admin'
+    = csrf_meta_tag
+    
+  %body.admin
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          = link_to 'Terra Bean', admin_root_path, :class => 'brand'
+          %ul.nav
+            %li= link_to 'Subscriptions', admin_subscriptions_path
+            %li.divider-vertical
+    .content.container
+      = yield

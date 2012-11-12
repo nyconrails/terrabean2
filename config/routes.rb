@@ -8,4 +8,9 @@ Terrabean::Application.routes.draw do
   
   match '/subscription_confirmation' => 'subscriptions#subscription_confirmation', :as => 'subscription_confirmation'
   
+  namespace :admin do
+    root :to => 'dashboard#index'
+    resources :subscriptions
+  end
+  
 end
