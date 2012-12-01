@@ -166,6 +166,7 @@ DEPENDENCIES
   haml-rails
   inherited_resources
   jquery-rails
+  less-rails
   mysql2
   paperclip
   rails (= 3.2.8)

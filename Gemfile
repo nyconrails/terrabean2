@@ -11,6 +11,7 @@ gem 'paperclip'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'twitter-bootstrap-rails'
 gem 'stripe'
+gem 'less-rails'
 
 
 # Gems used only for assets and not required
