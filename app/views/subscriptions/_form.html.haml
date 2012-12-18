@@ -71,7 +71,9 @@
       %br
       = f.submit "Subscribe"
       
-      %p I agree to the Terms of Service and understand that I'm enrolling in a recurring payment program and that I may cancel at any time.
+      %p
+        %input{ type: 'checkbox' }
+        I agree to the Terms of Service and understand that I'm enrolling in a recurring payment program and that I may cancel at any time.
   
   .bottom
     %noscript JavaScript is not enabled and is required for this form. First enable it in your web browser settings.
