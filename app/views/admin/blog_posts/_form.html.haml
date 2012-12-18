@@ -1,0 +1,15 @@
+.form-horizontal
+  = simple_form_for([:admin, @blog_post]) do |f|
+
+    .form-inputs
+      - %w( title content ).each do |k|
+        .control-group
+          = f.label k, class: 'control-label'
+          .controls= f.input k, label: false
+      .control-group
+        = f.label :photo, class: 'control-label'
+        .controls= f.input :photo, label: false, as: :file
+              
+    .form-actions
+      = f.button :submit, class: 'btn btn-success'
+

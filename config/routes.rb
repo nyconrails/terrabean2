@@ -11,6 +11,7 @@ Terrabean::Application.routes.draw do
   namespace :admin do
     root :to => 'dashboard#index'
     resources :subscriptions
+    resources :blog_posts
   end
   
 end

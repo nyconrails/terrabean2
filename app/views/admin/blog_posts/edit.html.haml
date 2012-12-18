@@ -1,0 +1,7 @@
+%h1 Editing Blog Posts
+
+= render 'form'
+
+.buttons
+  = link_to 'View Blog Post', admin_blog_post_path(@blog_post), class: 'btn btn-primary'
+  = link_to 'Delete Blog Post', admin_blog_post_path(@blog_post), :method => :delete, :confirm => "Are you sure?", class: 'btn btn-danger'

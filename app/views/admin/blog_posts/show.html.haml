@@ -1,0 +1,22 @@
+%h1 Blog Post ##{@blog_post.id}
+
+.nice_spacings
+
+  .group
+    .title Title:
+    .body= @blog_post.title
+
+  .group
+    .title Photo:
+    .body= image_tag @blog_post.photo.url(:small)
+
+  .group
+    .title Content:
+    .body= convert_to_markdown @blog_post.content
+
+  .group
+    .title Date Created:
+    .body= @blog_post.created_at.to_s(:date)
+
+
+.left_buttons= link_to 'Back', admin_blog_posts_path, class: 'btn btn-inverse'
