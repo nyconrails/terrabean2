@@ -4,4 +4,4 @@
 
 .buttons
   = link_to 'View Blog Post', admin_blog_post_path(@blog_post), class: 'btn btn-primary'
-  = link_to 'Delete Blog Post', admin_blog_post_path(@blog_post), :method => :delete, :confirm => "Are you sure?", class: 'btn btn-danger'
+  = link_to 'Delete Blog Post', admin_blog_post_path(@blog_post), method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-danger'

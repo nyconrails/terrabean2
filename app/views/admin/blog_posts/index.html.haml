@@ -14,4 +14,4 @@
       %td
         = link_to 'Show', admin_blog_post_path(blog_post), class: 'btn btn-primary'
         = link_to 'Edit', edit_admin_blog_post_path(blog_post), class: 'btn btn-warning'
-        = link_to 'Destroy', admin_blog_post_path(blog_post), :confirm => 'Are you sure?', :method => :delete, class: 'btn btn-danger'
+        = link_to 'Destroy', admin_blog_post_path(blog_post), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger'
