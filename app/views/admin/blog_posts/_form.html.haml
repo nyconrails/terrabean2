@@ -12,7 +12,9 @@
       .control-group
         = f.label :caption, class: 'control-label'
         .controls= f.input :caption, label: false
-             
+      .control-group
+        = f.label "Ready for display?", class: 'control-label'
+        .controls= f.input :display, label: false
               
     .form-actions
       = f.button :submit, class: 'btn btn-success'
