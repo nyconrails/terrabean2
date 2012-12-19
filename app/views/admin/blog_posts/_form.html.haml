@@ -6,12 +6,29 @@
         .control-group
           = f.label k, class: 'control-label'
           .controls= f.input k, label: false
+
       .control-group
         = f.label :photo, class: 'control-label'
         .controls= f.input :photo, label: false, as: :file
       .control-group
         = f.label :caption, class: 'control-label'
         .controls= f.input :caption, label: false
+
+      .control-group
+        = f.label :photo_2, class: 'control-label'
+        .controls= f.input :photo_2, label: false, as: :file
+      .control-group
+        = f.label :caption_2, class: 'control-label'
+        .controls= f.input :caption_2, label: false
+
+      .control-group
+        = f.label :photo_3, class: 'control-label'
+        .controls= f.input :photo_3, label: false, as: :file
+      .control-group
+        = f.label :caption_3, class: 'control-label'
+        .controls= f.input :caption_3, label: false
+
+
       .control-group
         = f.label "Ready for display?", class: 'control-label'
         .controls= f.input :display, label: false

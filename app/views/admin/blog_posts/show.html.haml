@@ -11,13 +11,29 @@
     .body= convert_to_markdown @blog_post.content
 
   .group
-    .title Photo:
+    .title Photo 1:
     .body= image_tag @blog_post.photo.url(:small)
 
   .group
-    .title Caption:
+    .title Caption 1:
     .body= @blog_post.caption
     
+  .group
+    .title Photo 2:
+    .body= image_tag @blog_post.photo_2.url(:small)
+
+  .group
+    .title Caption 2:
+    .body= @blog_post.caption_2
+
+  .group
+    .title Photo 3:
+    .body= image_tag @blog_post.photo_3.url(:small)
+
+  .group
+    .title Caption 3:
+    .body= @blog_post.caption_3
+
   .group
     .title Ready for Display:
     .body= @blog_post.display_yn  
