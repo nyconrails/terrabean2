@@ -7,12 +7,17 @@
     .body= @blog_post.title
 
   .group
+    .title Content:
+    .body= convert_to_markdown @blog_post.content
+
+  .group
     .title Photo:
     .body= image_tag @blog_post.photo.url(:small)
 
   .group
-    .title Content:
-    .body= convert_to_markdown @blog_post.content
+    .title Caption:
+    .body= @blog_post.caption
+    
 
   .group
     .title Date Created:

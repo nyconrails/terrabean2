@@ -9,6 +9,10 @@
       .control-group
         = f.label :photo, class: 'control-label'
         .controls= f.input :photo, label: false, as: :file
+      .control-group
+        = f.label :caption, class: 'control-label'
+        .controls= f.input :caption, label: false
+             
               
     .form-actions
       = f.button :submit, class: 'btn btn-success'
