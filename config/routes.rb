@@ -5,6 +5,7 @@ Terrabean::Application.routes.draw do
   
   #CRUD Resources
   resources :subscriptions
+  resources :blog_posts, only: [ :index, :show ]
   
   match '/subscription_confirmation' => 'subscriptions#subscription_confirmation', :as => 'subscription_confirmation'
   

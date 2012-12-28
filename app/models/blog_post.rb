@@ -8,6 +8,9 @@ class BlogPost < ActiveRecord::Base
   # Attributes
   attr_accessible :content, :title, :photo, :photo_2, :photo_3, :caption, :caption_2, :caption_3, :display
   
+  # Scopes
+  scope :ready_for_display, where(display: true)
+  
   # Validations
   validates_attachment_size :photo, :less_than => 5.megabytes
   validates_attachment_size :photo_2, :less_than => 5.megabytes
