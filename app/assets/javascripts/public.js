@@ -1,3 +1,3 @@
-$('.is_gift').live('click',function(){
+$('#is_gift').live('click',function(){
   $('.gift').toggle();
 });
