@@ -60,7 +60,7 @@
     
     .is_gift
       = label_tag :is_gift, "This is a gift"
-      = check_box_tag :is_gift, :class => 'is_gift'
+      = check_box_tag :is_gift, true, :class => 'is_gift'
     .gift
       = f.label :your_email
       = f.text_field :payer_email, :class => 'text'
